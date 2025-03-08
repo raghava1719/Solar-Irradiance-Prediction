@@ -36,6 +36,11 @@ function App() {
         'https://backend-solar-irradiance-prediction.onrender.com/predict',
         {
           parameters: Object.values(parameters).map((val) => parseFloat(val) || 0),
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
       );
 
