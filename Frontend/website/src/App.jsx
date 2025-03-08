@@ -29,7 +29,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('flask-hello-world-nxzlg0trh-raghavas-projects-68650adf.vercel.app/predict', {
+    const response = await fetch('https://backend-solar-irradiance-prediction.onrender.com//predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
